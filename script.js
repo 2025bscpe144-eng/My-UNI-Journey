@@ -7,10 +7,10 @@ const blogs = [
     tags: ["Programming Fundamentals" , "Machine Learning"],
     excerpt: "How I built my very first Machine Learning project in first semester.",
     content: `
-        <h1>My First Steps Machine Learning</h1>
-        <p class="date">April 05, 2026 • First Semester</p>
+<h1>My First Steps Machine Learning</h1>
+<p class="date">April 05, 2026 • First Semester</p>
         
-        <p>
+<p>
 1. Beginning of University Life
 
 My first semester was a completely new experience for me.
@@ -59,7 +59,7 @@ It boosted my confidence and communication skills.
 10. Academic Achievement
 
 I achieved a 3.1 GPA and secured a B+ grade in Programming Fundamentals.
-This result made me satisfied and motivated for the future..</p>
+This result made me satisfied and motivated for the future.</p>
 
        
 },
@@ -71,13 +71,12 @@ This result made me satisfied and motivated for the future..</p>
     tags: ["DataBase Management", "Mysql", "Github-Project"],
     excerpt: "How I manage 18 credit hours, cricket and practicle skills in labs.",
     content: `
-        <h1>My First steo into Web-Development</h1>
-        <p
+<h1>My First steo into Web-Development</h1>
+<p
 
 "Success is not final, failure is not fatal: it is the courage to continue that counts."
 
 1. Motivation from First Semester
-
 After achieving a 3.1 GPA, I felt motivated to perform even better.
 This result gave me confidence to move forward with a positive mindset.
 
@@ -135,8 +134,8 @@ Later, classes shifted online due to rising oil prices in Pakistan.</p>
     tags: ["Late-Night Study", "Under-Standing concepts", "Stress about Exams"],
     excerpt: "Worry! About exams.",
     content: `
-        <h1>Stressfull days of UNI-Life</h1>
-        <p 1. Return to Campus
+<h1>Stressfull days of UNI-Life</h1>
+<p 1. Return to Campus
 
 After Eid and the long break, we returned to physical classes on 1st April. Being back in hostels and campus was refreshing.
 
