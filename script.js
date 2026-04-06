@@ -1,78 +1,90 @@
 const blogs = [
     {
     id: 1,
-    title: "My First Steps into Web Development",
-    date: "April 1, 2026",
-    category: "Technology",
-    tags: ["web-dev"],
-    excerpt: "How I built my very first responsive website as a CE student in Faisalabad.",
+    title: "My First Semester Journey – Learning & Growth",
+    date: "January 15, 2026",
+    category: "Education",
+    tags: ["semester-1", "learning"],
+    excerpt: "A reflection on my first semester at university, challenges, and initial steps into programming.",
     content: `
-        <h1>My First Steps into Web Development</h1>
-        <p class="date">April 1, 2026 • Technology</p>
-        
-        <p>It all started with a simple HTML file during a boring lecture at university. While everyone else was taking notes on theory, I was obsessed with making a "Hello World" text turn blue and move to the center of my screen.</p>
+        <h1>My First Semester Journey – Learning & Growth</h1>
+        <p class="date">January 15, 2026 • Education</p>
 
-        <h3>The Spark</h3>
-        <p>Living in Faisalabad, I realized that many local businesses didn't have a digital presence. I decided that my first project shouldn't just be a tutorial clone—it should be something real. I spent 48 hours straight (fueled by plenty of Chai) learning how CSS Flexbox actually works.</p>
+        <h3>Beginning of University Life</h3>
+        <p>My first semester was a completely new experience for me. I entered university with excitement and curiosity to learn.</p>
 
-        <h3>The Tech Stack</h3>
-        <p>For this first project, I kept it lean and mean:</p>
-        <ul>
-            <li><strong>HTML5:</strong> Semantic tags for better SEO.</li>
-            <li><strong>CSS3:</strong> Custom properties and media queries for responsiveness.</li>
-            <li><strong>JavaScript:</strong> Just a tiny bit for a mobile toggle menu.</li>
-        </ul>
+        <h3>Introduction to Programming</h3>
+        <p>I studied Programming Fundamentals, where we worked with Python. It was my first proper introduction to coding.</p>
 
-        <blockquote>
-            "The best way to learn is to build something that breaks, and then figure out why."
-        </blockquote>
+        <h3>Initial Difficulties</h3>
+        <p>At the beginning, I faced many problems in understanding programming. The logic and syntax were confusing and difficult.</p>
 
-        <h3>Major Challenges</h3>
-        <p>The hardest part wasn't the code; it was making the site look good on my phone. I learned the 'Mobile First' approach the hard way after having to rewrite my CSS three times!</p>
+        <h3>Struggle with Logic Building</h3>
+        <p>Problem-solving and building logic were the hardest parts. I often got errors and struggled to fix them.</p>
 
-        <h3>Final Thoughts</h3>
-        <p>Two days later, I had a fully responsive site deployed. Lessons learned: Start small, don't get stuck in 'tutorial hell', and just ship it! If you're a student like me, stop waiting for the perfect idea and just start coding.</p>
+        <h3>Consistent Effort</h3>
+        <p>With time, I kept practicing and did not give up. My consistency helped me improve step by step.</p>
+
+        <h3>Understanding Python</h3>
+        <p>Gradually, I started understanding Python concepts better. Programming became more interesting and manageable.</p>
+
+        <h3>Machine Learning Project</h3>
+        <p>Our semester project was based on Machine Learning. It was a new and exciting field for me.</p>
+
+        <h3>Car Price Prediction Model</h3>
+        <p>We trained a model to predict car prices based on different factors. This project gave me practical exposure to real-world applications.</p>
+
+        <h3>Project Exhibition</h3>
+        <p>We presented our project in the exhibition. It boosted my confidence and communication skills.</p>
+
+        <h3>Academic Achievement</h3>
+        <p>I achieved a 3.1 GPA and secured a B+ grade in Programming Fundamentals. This result made me satisfied and motivated for the future.</p>
     `
 },
     {
     id: 2,
-    title: "Balancing University Life and Side Projects",
-    date: "March 20, 2026",
-    category: "Lifestyle",
-    tags: ["student-life"],
-    excerpt: "How I manage 18 credit hours, cricket, and still ship side projects every month.",
+    title: "My Second Semester Journey – Growth, Leadership & Experiences",
+    date: "April 1, 2026",
+    category: "Education",
+    tags: ["semester-2", "growth"],
+    excerpt: "How I improved from the first semester, learned MySQL, gained leadership experience, and balanced studies with extracurriculars.",
     content: `
-        <h1>Balancing University Life and Side Projects</h1>
-        <p class="date">March 20, 2026 • Lifestyle</p>
-
-        <p>Being a Computer Science student is a full-time job. Between 18 credit hours of lectures, lab assignments, and the occasional cricket match with friends, finding time to build side projects can feel impossible. But I believe "shipping" code is just as important as your GPA.</p>
-
-        <h3>The 'Maghrib to Isha' Rule</h3>
-        <p>My secret isn't working 10 hours a day. It's working 2 focused hours every single night. In Faisalabad, once the sun sets and Maghrib prayer is over, the city settles down. That is my deep-work window.</p>
-        
-        <ul>
-            <li><strong>No Phone:</strong> My phone goes in the other room.</li>
-            <li><strong>Single Task:</strong> I don't "code"—I solve one specific bug or build one specific component.</li>
-            <li><strong>The Notion Dashboard:</strong> I keep a simple 'Brain Dump' list so I don't waste time wondering what to work on.</li>
-        </ul>
-
-        <h3>Maintaining the Social Life</h3>
-        <p>You can't code 24/7 without burning out. I make sure to keep my Friday evenings strictly for family and cricket. It recharges my brain so I can tackle complex algorithms on Monday morning.</p>
+        <h1>My Second Semester Journey – Growth, Leadership & Experiences</h1>
+        <p class="date">April 1, 2026 • Education</p>
 
         <blockquote>
-            "Productivity isn't about doing more things; it's about doing the right things consistently."
+            "Success is not final, failure is not fatal: it is the courage to continue that counts."
         </blockquote>
 
-        <h3>Tools I Use</h3>
-        <p>To keep my life from falling apart, I rely on a very small set of tools:</p>
-        <ul>
-            <li><strong>Notion:</strong> For my university timetable and project roadmap.</li>
-            <li><strong>Google Calendar:</strong> To block out study sessions.</li>
-            <li><strong>VS Code:</strong> Obviously!</li>
-        </ul>
+        <h3>Motivation from First Semester</h3>
+        <p>After achieving a 3.1 GPA, I felt motivated to perform even better. This result gave me confidence to move forward with a positive mindset.</p>
 
-        <h3>Advice for Fellow Students</h3>
-        <p>Don't wait for the semester break to start your portfolio. Build 15 minutes a day if you have to. Those small commits add up to a career-ready GitHub profile by the time you graduate.</p>
+        <h3>A Fresh Start</h3>
+        <p>I started my second semester with determination and clear goals. I wanted to improve my academic performance and skills.</p>
+
+        <h3>Academic Load</h3>
+        <p>This semester included 6 theory subjects and 3 lab courses. Managing all subjects required proper time management and focus.</p>
+
+        <h3>Core Subjects</h3>
+        <p>The main subjects were DBMS, OOP, Calculus, and DLD. These subjects were more challenging and concept-based.</p>
+
+        <h3>Learning MySQL</h3>
+        <p>In Database Management Systems, we worked with MySQL. It helped me understand how to store and manage data efficiently.</p>
+
+        <h3>Importance of Databases</h3>
+        <p>Databases are essential in modern applications like websites and software. Learning MySQL gave me insight into real-world data handling.</p>
+
+        <h3>University Fiesta & Cricket</h3>
+        <p>During the University Fiesta, our department participated in cricket. It was the first time our Computer Engineering team joined the event.</p>
+
+        <h3>Leadership Experience</h3>
+        <p>I got the opportunity to lead my cricket team. This experience improved my leadership and teamwork skills.</p>
+
+        <h3>Marathon Achievement</h3>
+        <p>I participated in a 3km Marathon and secured 3rd position. It was a proud moment and boosted my confidence.</p>
+
+        <h3>Ramadan & Challenges</h3>
+        <p>My first Ramadan in hostel was challenging due to Sehri and Iftari issues. Later, classes shifted online due to rising oil prices in Pakistan.</p>
     `
 },
     {
