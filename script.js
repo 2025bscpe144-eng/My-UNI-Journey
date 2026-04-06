@@ -1,4 +1,4 @@
-<script>
+
 // =============================================
 // script.js - Complete & Updated Blog System
 // =============================================
@@ -139,6 +139,7 @@ const blogs = [
 // =============================================
 // Render Blogs Function
 // =============================================
+// Render blogs function
 function renderBlogs(blogsToShow, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -160,7 +161,7 @@ function renderBlogs(blogsToShow, containerId) {
                 <div class="tags">
                     ${blog.tags.map(tag => `<span class="tag">#${tag}</span>`).join("")}
                 </div>
-                <div class="see-full" onclick="event.stopImmediatePropagation(); openBlogModal(${blog.id})">
+                 <div class="see-full"  onclick="event.stopImmediatePropagation(); openBlogModal(${blog.id})">
                     See Full Story →
                 </div>
             </div>
@@ -170,39 +171,22 @@ function renderBlogs(blogsToShow, containerId) {
     });
 }
 
-// =============================================
-// Open Blog Modal
-// =============================================
 window.openBlogModal = function(id) {
     const blog = blogs.find(b => b.id === id);
     if (!blog) return;
-
     const modal = document.getElementById("blog-modal");
     const modalBody = document.getElementById("modal-body");
-    
     modalBody.innerHTML = blog.content;
     modal.style.display = "flex";
 };
 
-// =============================================
-// Setup Modal
-// =============================================
 function setupModal() {
     const modal = document.getElementById("blog-modal");
     const closeBtn = document.getElementById("modal-close");
-    
-    if (closeBtn) {
-        closeBtn.onclick = () => modal.style.display = "none";
-    }
-    
-    modal.onclick = (e) => {
-        if (e.target === modal) modal.style.display = "none";
-    };
+    if (closeBtn) closeBtn.onclick = () => modal.style.display = "none";
+    modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
 }
 
-// =============================================
-// Search Functionality
-// =============================================
 function setupSearch() {
     const globalSearch = document.getElementById("global-search");
     const categorySearch = document.getElementById("category-search");
@@ -224,9 +208,7 @@ function setupSearch() {
 
             if (isGlobal && dropdown) {
                 let html = "";
-                filtered.forEach(b => {
-                    html += `<div onclick="openBlogModal(${b.id}); document.getElementById('global-search').value='';">${b.title}</div>`;
-                });
+                filtered.forEach(b => html += `<div onclick="openBlogModal(${b.id}); document.getElementById('global-search').value='';">${b.title}</div>`);
                 dropdown.innerHTML = html || `<div style="padding:16px;opacity:0.6;">No results found</div>`;
                 dropdown.style.display = "block";
             } else if (!isGlobal) {
@@ -239,9 +221,6 @@ function setupSearch() {
     if (categorySearch) handleSearch(categorySearch, false);
 }
 
-// =============================================
-// Contact Form
-// =============================================
 function setupContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
@@ -264,9 +243,6 @@ function setupContactForm() {
     });
 }
 
-// =============================================
-// Tags Page
-// =============================================
 function loadTagsPage() {
     const cloud = document.getElementById("tags-cloud");
     if (!cloud) return;
@@ -282,30 +258,28 @@ window.filterByTag = function(tag) {
     renderBlogs(filtered, "tags-grid");
 };
 
-// =============================================
-// Initialize Everything
-// =============================================
 function init() {
     setupModal();
     setupSearch();
     setupContactForm();
 
-    // Home page - Featured blogs
+    // Home page
     if (document.getElementById("featured-grid")) {
         renderBlogs(blogs, "featured-grid");
     }
 
     // Categories page - Show ALL blogs by default
     if (document.getElementById("categories-grid")) {
-        renderBlogs(blogs, "categories-grid");
+        renderBlogs(blogs, "categories-grid");   // This ensures all blogs appear immediately
     }
 
     // Tags page
-    if (document.getElementById("tags-cloud")) {
-        loadTagsPage();
-    }
+   // Tags page
+if (document.getElementById("tags-cloud")) {
+    loadTagsPage();
+}
 
-    // Mobile burger menu
+    // Burger menu
     const burger = document.getElementById("burger");
     const mobileMenu = document.getElementById("mobile-menu");
     if (burger && mobileMenu) {
@@ -314,4 +288,3 @@ function init() {
 }
 
 window.onload = init;
-</script>
