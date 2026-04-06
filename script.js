@@ -5,7 +5,7 @@ const blogs = [
     date: "April 1, 2026",
     category: "Technology",
     tags: ["web-dev"],
-    excerpt: "How I built my very first responsive website as a CS student in Faisalabad.",
+    excerpt: "How I built my very first responsive website as a CE student in Faisalabad.",
     content: `
         <h1>My First Steps into Web Development</h1>
         <p class="date">April 1, 2026 • Technology</p>
