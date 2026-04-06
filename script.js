@@ -4,7 +4,7 @@ const blogs = [
     title: "My First Steps into Web Development",
     date: "April 1, 2026",
     category: "Technology",
-    tags: ["web-dev",],
+    tags: ["web-dev"],
     excerpt: "How I built my very first responsive website as a CS student in Faisalabad.",
     content: `
         <h1>My First Steps into Web Development</h1>
@@ -113,7 +113,6 @@ const blogs = [
     `
 },
 ];
-
 // Render blogs function
 function renderBlogs(blogsToShow, containerId) {
     const container = document.getElementById(containerId);
