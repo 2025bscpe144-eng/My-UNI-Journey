@@ -274,3 +274,4 @@ if (document.getElementById("tags-cloud")) {
 }
 
 window.onload = init;
+
