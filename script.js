@@ -1,144 +1,119 @@
-
-// =============================================
-// script.js - Complete & Updated Blog System
-// =============================================
-
 const blogs = [
     {
-        id: 1,
-        title: "My First Semester Journey – Learning & Growth",
-        date: "April 05, 2026",
-        category: "First Semester",
-        tags: ["Programming Fundamentals", "Machine Learning"],
-        excerpt: "How I built my very first Machine Learning project in first semester.",
-        content: `
-            <h1>My First Semester Journey – Learning & Growth</h1>
-            <p class="date">April 05, 2026 • First Semester</p>
-            
-            <h3>1. Beginning of University Life</h3>
-            <p>My first semester was a completely new experience for me. I entered university with excitement and curiosity to learn.</p>
-            
-            <h3>2. Introduction to Programming</h3>
-            <p>I studied Programming Fundamentals, where we worked with Python. It was my first proper introduction to coding.</p>
-            
-            <h3>3. Initial Difficulties</h3>
-            <p>At the beginning, I faced many problems in understanding programming. The logic and syntax were confusing and difficult.</p>
-            
-            <h3>4. Struggle with Logic Building</h3>
-            <p>Problem-solving and building logic were the hardest parts. I often got errors and struggled to fix them.</p>
-            
-            <h3>5. Consistent Effort</h3>
-            <p>With time, I kept practicing and did not give up. My consistency helped me improve step by step.</p>
-            
-            <h3>6. Understanding Python</h3>
-            <p>Gradually, I started understanding Python concepts better. Programming became more interesting and manageable.</p>
-            
-            <h3>7. Machine Learning Project</h3>
-            <p>Our semester project was based on Machine Learning. It was a new and exciting field for me.</p>
-            
-            <h3>8. Car Price Prediction Model</h3>
-            <p>We trained a model to predict car prices based on different factors. This project gave me practical exposure to real-world applications.</p>
-            
-            <h3>9. Project Exhibition</h3>
-            <p>We presented our project in the exhibition. It boosted my confidence and communication skills.</p>
-            
-            <h3>10. Academic Achievement</h3>
-            <p>I achieved a 3.1 GPA and secured a B+ grade in Programming Fundamentals. This result made me satisfied and motivated for the future.</p>
-        `
-    },
+    id: 1,
+    title: "My First Steps into Web Development",
+    date: "April 1, 2026",
+    category: "Technology",
+    tags: ["web-dev",],
+    excerpt: "How I built my very first responsive website as a CS student in Faisalabad.",
+    content: `
+        <h1>My First Steps into Web Development</h1>
+        <p class="date">April 1, 2026 • Technology</p>
+        
+        <p>It all started with a simple HTML file during a boring lecture at university. While everyone else was taking notes on theory, I was obsessed with making a "Hello World" text turn blue and move to the center of my screen.</p>
+
+        <h3>The Spark</h3>
+        <p>Living in Faisalabad, I realized that many local businesses didn't have a digital presence. I decided that my first project shouldn't just be a tutorial clone—it should be something real. I spent 48 hours straight (fueled by plenty of Chai) learning how CSS Flexbox actually works.</p>
+
+        <h3>The Tech Stack</h3>
+        <p>For this first project, I kept it lean and mean:</p>
+        <ul>
+            <li><strong>HTML5:</strong> Semantic tags for better SEO.</li>
+            <li><strong>CSS3:</strong> Custom properties and media queries for responsiveness.</li>
+            <li><strong>JavaScript:</strong> Just a tiny bit for a mobile toggle menu.</li>
+        </ul>
+
+        <blockquote>
+            "The best way to learn is to build something that breaks, and then figure out why."
+        </blockquote>
+
+        <h3>Major Challenges</h3>
+        <p>The hardest part wasn't the code; it was making the site look good on my phone. I learned the 'Mobile First' approach the hard way after having to rewrite my CSS three times!</p>
+
+        <h3>Final Thoughts</h3>
+        <p>Two days later, I had a fully responsive site deployed. Lessons learned: Start small, don't get stuck in 'tutorial hell', and just ship it! If you're a student like me, stop waiting for the perfect idea and just start coding.</p>
+    `
+},
     {
-        id: 2,
-        title: "My Second Semester Journey – Growth, Leadership & Experiences",
-        date: "April 05, 2026",
-        category: "Second Semester",
-        tags: ["DataBase Management", "Mysql", "Github-Project"],
-        excerpt: "How I managed 18 credit hours, cricket, and practical skills in labs.",
-        content: `
-            <h1>My Second Semester Journey – Growth, Leadership & Experiences</h1>
-            <p class="date">April 05, 2026 • Second Semester</p>
-            
-            <blockquote class="motivational-quote">
-                "Success is not final, failure is not fatal: it is the courage to continue that counts."
-            </blockquote>
-            
-            <h3>1. Motivation from First Semester</h3>
-            <p>After achieving a 3.1 GPA, I felt motivated to perform even better. This result gave me confidence to move forward with a positive mindset.</p>
-            
-            <h3>2. A Fresh Start</h3>
-            <p>I started my second semester with determination and clear goals. I wanted to improve my academic performance and skills.</p>
-            
-            <h3>3. Academic Load</h3>
-            <p>This semester included 6 theory subjects and 3 lab courses. Managing all subjects required proper time management and focus.</p>
-            
-            <h3>4. Core Subjects</h3>
-            <p>The main subjects were DBMS, OOP, Calculus, and DLD. These subjects were more challenging and concept-based.</p>
-            
-            <h3>5. Learning MySQL</h3>
-            <p>In Database Management Systems, we worked with MySQL. It helped me understand how to store and manage data efficiently.</p>
-            
-            <h3>6. Importance of Databases</h3>
-            <p>Databases are essential in modern applications like websites and software. Learning MySQL gave me insight into real-world data handling.</p>
-            
-            <h3>7. University Fiesta & Cricket</h3>
-            <p>During the University Fiesta, our department participated in cricket. It was the first time our Computer Engineering team joined the event.</p>
-            
-            <h3>8. Leadership Experience</h3>
-            <p>I got the opportunity to lead my cricket team. This experience improved my leadership and teamwork skills.</p>
-            
-            <h3>9. Marathon Achievement</h3>
-            <p>I participated in a 3km Marathon and secured 3rd position. It was a proud moment and boosted my confidence.</p>
-            
-            <h3>10. Ramadan & Challenges</h3>
-            <p>My first Ramadan in hostel was challenging due to Sehri and Iftari issues. Later, classes shifted online due to rising oil prices in Pakistan.</p>
-        `
-    },
+    id: 2,
+    title: "Balancing University Life and Side Projects",
+    date: "March 20, 2026",
+    category: "Lifestyle",
+    tags: ["student-life"],
+    excerpt: "How I manage 18 credit hours, cricket, and still ship side projects every month.",
+    content: `
+        <h1>Balancing University Life and Side Projects</h1>
+        <p class="date">March 20, 2026 • Lifestyle</p>
+
+        <p>Being a Computer Science student is a full-time job. Between 18 credit hours of lectures, lab assignments, and the occasional cricket match with friends, finding time to build side projects can feel impossible. But I believe "shipping" code is just as important as your GPA.</p>
+
+        <h3>The 'Maghrib to Isha' Rule</h3>
+        <p>My secret isn't working 10 hours a day. It's working 2 focused hours every single night. In Faisalabad, once the sun sets and Maghrib prayer is over, the city settles down. That is my deep-work window.</p>
+        
+        <ul>
+            <li><strong>No Phone:</strong> My phone goes in the other room.</li>
+            <li><strong>Single Task:</strong> I don't "code"—I solve one specific bug or build one specific component.</li>
+            <li><strong>The Notion Dashboard:</strong> I keep a simple 'Brain Dump' list so I don't waste time wondering what to work on.</li>
+        </ul>
+
+        <h3>Maintaining the Social Life</h3>
+        <p>You can't code 24/7 without burning out. I make sure to keep my Friday evenings strictly for family and cricket. It recharges my brain so I can tackle complex algorithms on Monday morning.</p>
+
+        <blockquote>
+            "Productivity isn't about doing more things; it's about doing the right things consistently."
+        </blockquote>
+
+        <h3>Tools I Use</h3>
+        <p>To keep my life from falling apart, I rely on a very small set of tools:</p>
+        <ul>
+            <li><strong>Notion:</strong> For my university timetable and project roadmap.</li>
+            <li><strong>Google Calendar:</strong> To block out study sessions.</li>
+            <li><strong>VS Code:</strong> Obviously!</li>
+        </ul>
+
+        <h3>Advice for Fellow Students</h3>
+        <p>Don't wait for the semester break to start your portfolio. Build 15 minutes a day if you have to. Those small commits add up to a career-ready GitHub profile by the time you graduate.</p>
+    `
+},
     {
-        id: 3,
-        title: "Second Semester Mid-Exams: Struggles, Hard Work",
-        date: "April 05, 2026",
-        category: "Exam-Preparation",
-        tags: ["Late-Night Study", "Understanding Concepts", "Stress about Exams"],
-        excerpt: "The stressful yet rewarding preparation days before second semester mid-exams.",
-        content: `
-            <h1>Second Semester Mid-Exams: Struggles, Hard Work</h1>
-            <p class="date">April 05, 2026 • Exam Preparation</p>
-            
-            <h3>1. Return to Campus</h3>
-            <p>After Eid and the long break, we returned to physical classes on 1st April. Being back in hostels and campus was refreshing.</p>
-            
-            <h3>2. Realizing Learning Gaps</h3>
-            <p>Online classes left some gaps in concepts, especially in OOP and C#, so we needed to catch up quickly.</p>
-            
-            <h3>3. Mid-Exams Announcement</h3>
-            <p>With exams starting 7th April, we had limited time to revise. Focus and planning became urgent.</p>
-            
-            <h3>4. Daily Study Routine</h3>
-            <p>We followed a strict routine: theory in mornings, coding practice in afternoons, and self-tests at night.</p>
-            
-            <h3>5. Focus on OOP</h3>
-            <p>OOP in C# was challenging. We practiced coding exercises daily and reviewed key concepts like classes and inheritance.</p>
-            
-            <h3>6. Group Study Sessions</h3>
-            <p>Studying with friends helped clarify doubts, discuss coding problems, and strengthen understanding.</p>
-            
-            <h3>7. Managing Stress</h3>
-            <p>Short breaks, light exercise, and motivational quotes helped us stay calm and focused during exam prep.</p>
-            
-            <h3>8. Revision Strategies</h3>
-            <p>We summarized notes, solved past papers, and practiced coding repeatedly for better retention.</p>
-            
-            <h3>9. Looking Forward to Success</h3>
-            <p>After mid-exams, In Sha Allah, we plan to go home. The hard work now motivates us for the rest of the semester.</p>
-            
-            <h3>10. Lessons Learned</h3>
-            <p>Discipline, consistent practice, and teamwork proved essential. Focused effort can overcome gaps and lead to success.</p>
-        `
-    }
+    id: 3,
+    title: "Why Every Student Should Learn AI Basics in 2026",
+    date: "April 5, 2026",
+    category: "Technology",
+    tags: ["ai"],
+    excerpt: "AI is no longer a buzzword. It's the new electricity — students must start now.",
+    content: `
+        <h1>Why Every Student Should Learn AI Basics in 2026</h1>
+        <p class="date">April 5, 2026 • Technology</p>
+
+        <p>We are living in an era where AI is no longer a "future" concept—it's the foundation of modern infrastructure. Just as previous generations had to learn how to use a computer, our generation must learn how to collaborate with AI agents to stay relevant.</p>
+
+        <h3>Beyond the Chatbot</h3>
+        <p>Many students make the mistake of thinking AI is just ChatGPT. In 2026, the landscape has shifted toward <strong>AI Agents</strong>—programs that don't just talk, but actually perform tasks like booking appointments, writing tests, or analyzing large datasets automatically.</p>
+
+        <blockquote>
+            "AI won't replace you, but a person using AI will."
+        </blockquote>
+
+        <h3>Where to Start?</h3>
+        <p>You don't need a PhD in Mathematics to start. Here is my recommended roadmap for any student in Faisalabad or beyond:</p>
+        <ul>
+            <li><strong>Master Prompt Engineering:</strong> Learn how to give precise instructions to get high-quality outputs.</li>
+            <li><strong>Understand the Ethics:</strong> Learn about bias and data privacy so you can use these tools responsibly.</li>
+            <li><strong>Build a 'Wrapper':</strong> Try using APIs to connect an AI model to a simple website (like this blog!).</li>
+        </ul>
+
+        <h3>The "New Electricity"</h3>
+        <p>Think of AI as the new electricity. It will power every industry, from the textile mills here in Faisalabad to the global tech hubs in Silicon Valley. If you can understand the basics now, you'll be the one building the systems of tomorrow.</p>
+
+        <h3>My Personal AI Workflow</h3>
+        <p>I use AI every day to help me debug my JavaScript code and summarize long academic papers. It saves me roughly 10 hours a week—time I can spend on cricket or working on my next side project!</p>
+
+        <p>The tools are free, and the tutorials are everywhere. Don't wait for your university to add it to the curriculum—start building today.</p>
+    `
+},
 ];
 
-// =============================================
-// Render Blogs Function
-// =============================================
 // Render blogs function
 function renderBlogs(blogsToShow, containerId) {
     const container = document.getElementById(containerId);
